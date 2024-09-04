@@ -16,22 +16,22 @@ export default function MobileMenu() {
   const [navShow, setNavShow] = useState(false);
   const data = [
     {
-      title: "Me",
+      title: "About",
       href: "/about",
       icon: HiUser,
     },
     {
       title: "Projects",
-      href: "/blog",
-      icon: HiBookmarkAlt,
-    },
-    {
-      title: "Other",
       href: "/projects",
       icon: HiBeaker,
     },
     {
-      title: "Photography",
+      title: "Blog",
+      href: "/blog",
+      icon: HiBookmarkAlt,
+    },
+    {
+      title: "Photos",
       href: "/photos",
       icon: HiCamera,
     },

@@ -22,8 +22,7 @@ export default async function Posts() {
   return (
     <section>
       {posts.length > 0 ? (
-        // <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-12 gap-x-8 lg:max-w-[950px] max-w-full mb-12">
-        <div className="grid lg:grid-cols-2 lg:max-w-[100%] max-w-full lg:mx-auto lg:gap-8 gap-12 mb-12 ">
+        <div className="flex flex-col lg:max-w-[950px] max-w-full lg:gap-y-8 gap-y-12 mb-12">
           {posts.map((post) =>
             post.isPublished !== true ? null : (
               <article key={post._id}>
@@ -36,9 +35,7 @@ export default async function Posts() {
                       src={post.coverImage?.image || fallbackImage}
                       className="dark:bg-zinc-800 bg-zinc-100 rounded-md object-cover group-hover:scale-125 duration-300"
                       alt={post.coverImage?.alt || post.title}
-                      layout="fixed"
-                      width={200}
-                      height={200}
+                      layout="fill"
                       placeholder={post.coverImage ? "blur" : "empty"}
                       blurDataURL={post.coverImage?.lqip || ""}
                     />
@@ -47,7 +44,7 @@ export default async function Posts() {
                     <h2 className="max-w-sm text-2xl font-semibold tracking-tight mb-4">
                       {post.title}
                     </h2>
-                    <p className="dark:text-zinc-400 text-zinc-600 text-[0.80rem]">
+                    <p className="dark:text-zinc-400 text-zinc-600 text-[0.95rem]">
                       {post.description}
                     </p>
                     <div className="flex items-center gap-x-4 mt-3 text-sm">

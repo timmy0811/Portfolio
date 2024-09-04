@@ -1,11 +1,12 @@
 import { defineField, defineType } from "sanity";
 import { BiUser } from "react-icons/bi";
+import React from "react"; // Import React to define the component
 
 export default defineType({
   name: "author",
   title: "Author",
   type: "document",
-  icon: BiUser,
+  icon: typeof BiUser,
   fields: [
     defineField({
       name: "name",

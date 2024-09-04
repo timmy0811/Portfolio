@@ -5,7 +5,7 @@ export default defineType({
   name: "quiz",
   title: "Quiz",
   type: "object",
-  icon: BiCommand,
+  icon: typeof BiCommand,
   fields: [
     defineField({
       name: "question",

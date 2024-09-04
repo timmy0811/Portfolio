@@ -8,20 +8,20 @@ import MobileMenu from "./MobileMenu";
 export default function Navbar() {
   const data = [
     {
-      title: "Me",
+      title: "About",
       href: "/about",
     },
     {
       title: "Projects",
+      href: "/projects",
+    },
+    {
+      title: "Blog",
       href: "/blog",
     },
     {
-      title: "Photography",
+      title: "Photos",
       href: "/photos",
-    },
-    {
-      title: "Other",
-      href: "/projects",
     },
   ];
 

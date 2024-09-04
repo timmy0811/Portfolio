@@ -75,8 +75,8 @@ export default function Footer() {
             </a> */}
 
             <small className="text-zinc-500">
-              Copyright &copy; Timm Schmidt {new Date().getFullYear()} All rights
-              Reserved. Credits to Victor Eke
+              Copyright &copy; Victor Eke {new Date().getFullYear()} All rights
+              Reserved
             </small>
           </div>
         </div>
